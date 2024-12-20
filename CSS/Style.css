@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(#200016,#10001f) ;
+    height: 100vh;
+    font-family: system-ui;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+header{
+    position: absolute;
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    overflow: hidden;
+}
+.icon{
+    display: none;
+    color: #fff;
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover{
+    background: #FFF;
+    color: #200016;
+}
+.main{
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.drop-down{
+    display: none;
+    width: 100%;
+    top: -85px;
+    overflow: hidden;
+    position: relative;
+    background-color: burlywood;
+}
+.drop-contant a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#About{
+    color: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+#About h2{
+    margin: 20px;
+    font-size: 30px;
+}
+#About p{
+    margin: 20px;
+}
+#Trips h2{
+    color: gold;
+    margin-left: 2%;
+}
+.trip-card{
+    display: inline-block;
+    width: 25%;
+    height: 550px;
+    padding: 30px 10px;
+    margin:2%;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+}
+.trip-card img{
+    width: 300px;
+    border-radius: 30px;
+}
+.trip-card .luxor{
+    width: 310px;
+}
+#Pricing h2{
+    color: gold;
+    margin: 2%;
+}
+.price{
+    display: inline-block;
+    width: 25%;
+    height: 550px;
+    padding: 30px 10px;
+    margin:2%;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+}
+.price img{
+    width:75px;
+}
+.price button{
+    position:relative;
+    right: 2px;
+    top: 165px;
+    background-color: black;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 25px;
+}
+.price button:hover{
+    background-color: #FFF;
+    color: #000;
+    cursor: pointer;
+}
+.price center{
+    margin-top: 80px;
+    font-size: 30px;
+    color: gold;
+}
+.pro{
+    padding:7px;
+}
+.contact{
+    background-color: #FFF;
+    overflow: hidden;
+}
+#Contact h2{
+    color: gold;
+    margin: 2%;
+}
+.form-box {
+    margin-top: 30px;
+}
+.input-group input{
+    display: block;
+    width: 40%;
+    border: 0;
+    box-shadow: 2px 2px 2px black;
+    outline: none !important;
+    padding: 10px;
+    margin: 2%;
+}
+.text-area textarea{
+    width: 40%;
+    border: 0;
+    box-shadow: 2px 2px 2px black;
+    outline: none !important;
+    padding: 10px;
+    margin: 2%;
+}
+.sub{
+    border:1px solid black;
+    border-radius: 50px;
+    outline: none !important;
+    padding: 10px;
+    font-size: 15px;
+    background-color:#f07b26;
+    color: #fff;
+    margin: 2%;
+    cursor: pointer;
+}
+.sub:hover{
+    background-color: #fff;
+    color: #000;
+}
+.subscription input{
+    display: block;
+    width: 40%;
+    border: 0;
+    box-shadow: 2px 2px 2px black;
+    outline: none !important;
+    padding: 10px;
+    margin: 2%;
+}
+.cont{
+    margin: 5% 0 5% 36%;
+}
+.cont i{
+    color: orange;
+}
+.cont span{
+    margin: 1%;
+}
+.copy{
+    text-align: center;
+    margin-bottom: 30px;
+    color: grey;
+}
+@media only screen and (max-width:900px){
+    header ul{
+        display:none;
+    }
+    .icon{
+        display: block;
+    }
+    header{
+        width: 80%;
+    }
+    .drop-down{
+        display: block;
+        overflow: hidden;
+        top: -220px;
+        background-color: burlywood;
+        z-index: 1;
+    }
+    .drop-contant{
+        display: none;
+    }
+    #About{
+        width: 80%;
+    }
+    .video{
+        width:100%;
+    }
+    .trip-card{
+        width: 80%;
+    }
+    .price{
+        width: 80%;
+    }
+    .cont{
+        margin-left:32px;
+    }
+}
